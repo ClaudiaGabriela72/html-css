@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            background-color: rgb(127, 138, 150);
+        }
+        header {
+            width: auto;
+            left: 50px;
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            text-decoration: none;
+            background-color: lightslategrey;
+            box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.445);
+        }
+        nav > a {
+            color: white;
+            padding: 10px;
+        }
+
+        main {
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+        main > section {
+            background-color: lightslategrey;
+        }
+        article > aside {
+            background-color: aquamarine;
+        }
+
+        footer {
+            background-color: #000;
+            color: white;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--divs semanticas
+        Header: cabeçalho/--> 
+    
+    <header>
+        <h1> Meu site</h1>
+        <!--nav: menu--> 
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+
+    </header>
+     <!--/Main: corpo principal--> 
+    <main>
+        <!--section: assunto 
+        article: artigo
+        aside: relativo ao artigo-->
+        <section id="assunto">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dicta reiciendis, fuga maiores voluptas rem facere aliquid cumque illum ex dolorum! Minima nostrum illum expedita suscipit mollitia? Voluptatibus, maxime non?</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>noticia sobre alguma coisa</h2>
+                <aside>
+                    <p>artigo escrito por F</p>
+                </aside>
+            </article>
+        </section>
+
+    </main>
+    <!--/ footer: rodapé-->
+    <footer>
+        <p>desenvolvido por H</p>
+    </footer>
+</body>
+</html>

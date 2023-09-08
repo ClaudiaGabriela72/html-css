@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou
+        simplemente aumente e diminua a imagem
+
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagem/fot-m.png" type="image/png">
+        <img src="imagem/foto-g.png" alt="imagem flexisivel">
+    </picture>
+    <h1>Audio com HTML</h1>
+    <p>Vamos inserir um audio com html5</p>
+    <audio src="midia/Dream It - TrackTribe.mp3" controls>musica</audio>
+    <p>aoutra meneira de colocar um audio, por compatibilidade</p>
+    <audio preload="metadata" controls>
+        <source src="midia/Dream It - TrackTribe.mp3" type="audio/mpeg">
+       <source src="midia/Dream It - TrackTribe.ogg" type="audio/ogg">
+       <source src="midia/Dream It - TrackTribe.wav" type="audio/wav">
+       <p>o navegador ira tentar cada uma das versoes da primeira em diante</p>
+    </audio>
+    <h2>inserindo um video hospedado localmente <h2>
+        <p>devemos ter a mesma preocupaçao que o audio com respeito a compatibilidade dos navegadores, por isso use varios formatos para que o navegador use a melhor versao.</p>
+        <video width="500" poster="imagem/para ser a capa do video" controls>
+            <source src="nome do video.mp4" type="video/mp4">
+            <source src="nome do video.m4v" type="video/m4v">
+            <source src="nome do video.webm" type="video/webm">
+            <source src="nome do video.ogv" type="video/ogg">
+             <p>seu navegador nao é compativel com reproduçao de video</p>
+        </video>
+        <h2>Inserindo videos de hospedagem externa</h2>
+        <p>colocar videos que sao hospedados em outro seti é a melhor forma de nao sobrecarregar seu seti, nao comsome dados e nao gera custos</p>
+        <h3>inserindo um video do Youtube</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h3>inserindo videos do vimeo</h3>
+        <iframe src="https://player.vimeo.com/video/257399106?h=b4f1975b25&title=0&portrait=0" width="600" height="338" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>

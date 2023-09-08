@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body{
+    background-color: antiquewhite;
+}
+h1{
+    color: rgb(43, 102, 102);
+    font-weight: 700; font-family: 'Courier New', Courier, monospace;
+}
+h2{
+    color: rgb(13, 141, 141);
+    font-weight: 600;
+    font-size:larger;
+    font-size: 130%;
+}
+p{
+    color: rgb(12, 2, 2);
+    text-align: justify;
+    font-weight: 500;
+    font-family:serif
+}
