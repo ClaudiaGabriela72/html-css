@@ -18,16 +18,34 @@
         }
 
         div#cxa{
-            flex-grow: 0;
+            /*flex-grow: 0;
             flex-shrink: 0;
+            flex-basis: 150px;*/
+            flex: 0 0 150px;
         }
         div#cxb{
-            flex-grow: 4;
-            flex-shrink: 2;
+            /*flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto*/
+            flex: initial;
         }
         div#cxc{
-            flex-grow: 2;
-            flex-shrink: 3;
+            /*flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: auto;*/
+            flex: none;
+        }
+        div#cxd{
+            /*flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;*/
+            flex: auto;
+        }
+        div#cxe{
+            /*flex-grow: 3;
+            flex-shrink: 1;
+            flex-basis: auto;*/
+            flex: 3;
         }
     </style>
 </head>
@@ -36,6 +54,9 @@
         <div  class="conteiner" id="cxa">A</div>
         <div  class="conteiner" id="cxb">B</div>
         <div  class="conteiner" id="cxc">C</div>
+        <div  class="conteiner" id="cxd">D</div>
+        <div  class="conteiner" id="cxe">E</div>
+
     </div>
 </body>
 </html>
